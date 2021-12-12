@@ -1,23 +1,27 @@
-4
-P OR -Q OR -R OR -T
--R OR S
--R OR -T
-S OR -T
 8
-P OR -Q OR -R
-P OR -Q OR -R OR -S
-P OR -Q OR -T
--Q OR -R OR T
--Q OR -R OR -S
--R
-S
+A OR -E OR -T
+A OR -F OR -G
+A OR -F OR -T
+-B OR -T
+-B OR -G
+-E OR -F
+E
+F
+10
+A OR -E
+A OR -F
+A OR -G
+A OR -G OR -T
+A OR -T
+-E
+-E OR -T
+-F OR -T
+-F
+-F OR -G
+5
+A
+-G
+-G OR -T
 -T
-7
-P OR -Q
--Q OR -R
--Q OR -R OR S
--Q OR -R OR -T
--Q OR -S
--Q OR T
 {}
 YES

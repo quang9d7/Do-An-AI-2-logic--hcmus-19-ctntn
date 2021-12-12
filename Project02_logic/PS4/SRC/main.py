@@ -88,6 +88,10 @@ def factoring(first_sen,second_sen):
         return '{}'
     return ' OR '.join(list_res)
 
+def sortInputAlphabet(sens):
+    l=sens.split(' OR ')
+    sorted_list=sortAlphabet(l)
+    return ' OR '.join(sorted_list)
 
     
 def PL_RESOLUTION(f_in,f_out):
@@ -109,6 +113,9 @@ def PL_RESOLUTION(f_in,f_out):
         sen=fin.readline()
         sentences.append(sen[0:len(sen)-1])
     sentences.append(fin.readline())
+    for e in sentences:
+        if len(e)>2:
+            e=sortInputAlphabet(e)
     fin.close()
     first_index=0
     second_index=1
@@ -119,8 +126,9 @@ def PL_RESOLUTION(f_in,f_out):
                 if i<j:
                     if isContainOpposit(sentences[i],sentences[j]):
                         factor=factoring(sentences[i],sentences[j])
+                        # print('('+sentences[i]+') hop giai voi ( '+sentences[j]+"===>"+factor)
                         additionList.append(factor)
-
+        # print('----------------')
         if len(additionList)==0:
             fout.write("0\n")
             fout.write('NO')

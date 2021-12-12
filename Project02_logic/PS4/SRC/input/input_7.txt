@@ -1,7 +1,0 @@
-V
-5
-A OR V
-C OR V
--C OR D
--A OR V
--C

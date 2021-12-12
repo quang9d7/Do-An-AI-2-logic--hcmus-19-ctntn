@@ -1,16 +1,24 @@
-4
--P OR S OR T
--R OR T
--R OR S
-R
-6
--P OR T
--P OR S
--R
-S
-S OR T
-T
-2
--P
-{}
-YES
+7
+-A OR -B OR F
+-A OR -C OR -D
+-B OR -C
+B OR -C
+B OR -D OR F
+D OR F
+F
+9
+-A OR -C OR F
+-A OR -D OR F
+-A OR -C
+-A OR -C OR -D OR F
+-B OR F
+B OR -C OR F
+B OR F
+-C OR -D
+-C OR -D OR F
+3
+-A OR F
+-C OR F
+-D OR F
+0
+NO
